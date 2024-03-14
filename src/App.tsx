@@ -1,6 +1,7 @@
 import './App.css';
 import Card from './components/card';
 import { useState } from 'react';
+import Input from './components/input'
 import Gibson from './assets/gibson.jpeg';
 import Strat from './assets/strat.jpeg';
 import SRV from './assets/SRV.jpg';
@@ -19,13 +20,13 @@ const electricGuitarTriviaData: ElectricGuitarTrivia[] = [
     img: Gibson, // Directly use imported image
   },
   {
-    question: "What Fender Stratocaster is known for its distinctive three single-coil pickups?",
-    answer: "Fender Stratocaster",
+    question: "What Fender is known for its distinctive three single-coil pickups?",
+    answer: "Stratocaster",
     img: Strat, // Directly use imported image
   },
   {
     question: "What brand of electric guitar is known for its V-shaped body?",
-    answer: "Gibson Flying V",
+    answer: "Flying V",
     img: FV, // Directly use imported image
   },
   {
@@ -38,10 +39,15 @@ const electricGuitarTriviaData: ElectricGuitarTrivia[] = [
 function App() {
   const [currentIndex, setCurrentIndex] = useState(0); // Initialize state to track the current index
 
-  const handleToggle = () => {
+  const handleToggleForward = () => {
     // Update the current index to the next item, wrapping back to 0 if at the end of the array
     setCurrentIndex((prevIndex) => (prevIndex + 1) % electricGuitarTriviaData.length);
   };
+  const handleToggleBackward = () => {
+    // Update the current index to the next item, wrapping back to 0 if at the end of the array
+    setCurrentIndex((prevIndex) => (prevIndex - 1) >= 0 ? prevIndex - 1 : 0)
+  };
+
 
   return (
     <>
@@ -54,7 +60,12 @@ function App() {
           img={electricGuitarTriviaData[currentIndex].img} // Passed directly as a string
         />
         {/* Button to toggle to the next card */}
-        <button onClick={handleToggle}>Next Card</button>
+      
+        <Input answer = {electricGuitarTriviaData[currentIndex].answer}/>
+      </div>
+      <div>
+        <button onClick={handleToggleBackward} className ='button'> Back </button>
+        <button onClick={handleToggleForward} className ='button'>Next</button>
       </div>
     </>
   );

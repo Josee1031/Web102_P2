@@ -1,26 +1,26 @@
-# Web Development Project 2 - *Name of App Here*
+# Web Development Project 3 - *Name of App Here*
 
 Submitted by: **Jose Plaud**
 
-This web app: **Project 2: Flashcards! Part 1**
+This web app: **In Flashcards! Part 1, you chose pairs of items to store in a flashcard-like format that users can use to study, learn something new, or play a guessing game. This week, you will extend the functionality of your web app! You will build features that allow users to enter an answer (with exact or fuzzy matching) and move backwards and forwards through the list of cards.**
 
-Time spent: **5** hours spent in total
+Time spent: **3** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [X] **The title of the card set and some information about it, such as a short description and the total number of cards are displayed**
-- [X] **A single card at a time is displayed, only showing one of the components of the information pair**
-- [X] **A list of card pairs is created**
-- [X] **Clicking on the card shows the corresponding component of the information pair**
-- [X] **Clicking the next button displays a random new card**
+- [X] **The user can enter their guess in a box before seeing the flipside of the card**
+- [X] **Clicking on a submit button shows visual feedback about whether the answer was correct or incorrect**
+- [X] **A back button is displayed on the card and can be used to return to the previous card in a set sequence**
+- [X] **A next button is displayed on the card and can be used to navigate to the next card in a set sequence**
 
 The following **optional** features are implemented:
 
-- [X] Cards contains images in addition to or in place of text
-- [ ] Cards have different visual styles such as color based on their category
-  - [X] *visual style implemented*
+- [ ] A shuffle button is used to randomize the order of the cards
+- [ ] A user's answer may be counted as correct even when it is slightly different from the target answer
+- [ ] A counter displays the user's current and longest streak of correct responses
+- [ ] A user can mark a card that they have mastered and have it removed from the pool of answers as well as added to a list of mastered cards
 
 The following **additional** features are implemented:
 
@@ -28,12 +28,12 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented required features:
+Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/Josee1031/Web102_P2/blob/main/src/assets/Kapture%202024-03-09%20at%2021.10.43.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='/src/assets/Kapture 2024-03-14 at 12.15.36.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with kap 
+GIF created with kap  
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -45,7 +45,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2024] [Jose Plaud]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
